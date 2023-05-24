@@ -23,11 +23,13 @@
   <header id="top">
     <nav class="navbar navbar-expand-md">
       <div class="container-fluid justify-content-around">
-        <img src="./images/logo.png" alt="Logo">
+        <div>
+          <img src="./images/logo.png" alt="Logo">
+        </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item current"><a class="nav-link" href="./index.html">INICIO</a></li>
             <li class="nav-item"><a class="nav-link" href="./pages/tienda.html">TIENDA</a></li>
@@ -64,7 +66,7 @@
               hecho a tu medida.<br>También armamos diseños sumando algo nuevo a lo que ya tengas. ¡No dudes en
               contactarnos!</p>
             <!-- Boton subir -->
-            <div class="volver"><a href="#top">Subir</a></div>
+            <div class="volver"><button class="volver"><a href="#top">Subir</a></button></div>
           </article>
     
           <article id="ofertas_semanales">
@@ -76,27 +78,19 @@
               <div class="carta">
                 <div class="contenido">
                   <!--Imagen -->
-                  <div>
-                    <img src="./images/producto_1.png" alt="Producto 1">
-                  </div>
+                  <p class="promo">¡PROMO 30% OFF!</p>
+                  <img src="./images/producto_1.png" alt="Producto 1">
                   <!--Precio anterior-->
-                  <div>
-                    <span class="tachado">$3300.</span><span class="cent tachado">00</span>
-                  </div>
+                  <p><span class="tachado">$3300.</span><span class="cent tachado">00</span></p>
                   <!--Precio nuevo-->
-                  <div>
-                    <span class="actual">$2300.</span><span class="cent">00</span>
-                  </div>
+                  <p class="actual">$2300.<span class="cent">00</span></p>
                   <!--Descripcion-->
-                  <div>
-                    <p>Cartuchera hojas aqua</p>
-                  </div>
+                  <p>Cartuchera hojas aqua</p>
                 </div>
                 <!--Boton carrito-->
-                <div class="carrito">
+                <button class="carrito">
                   <img src="./images/carrito.png" alt="Carrito">
-                </div>
-                <p class="promo">¡PROMO 30% OFF!</p>
+                </button>
               </div>
     
               <!--Contenedor de tarjeta-->
@@ -181,7 +175,7 @@
               </div>
             </div>
             <!-- Boton subir -->
-            <div class="volver"><a href="#top">Subir</a></div>
+            <div class="volver"><button class="volver"><a href="#top">Subir</a></button></div>
           </article>
     
           <article id="metodos_de_entrega">
@@ -192,7 +186,7 @@
             </div>
             <p>O bien consultanos por envíos gratis a todo el país vía correo.</p>
             <!-- Boton subir -->
-            <div class="volver"><a href="#top">Subir</a></div>
+            <div class="volver"><button class="volver"><a href="#top">Subir</a></button></div>
           </article>
     
           <article id="medios_de_pago">
@@ -213,11 +207,32 @@
               </div>
             </div>
             <!-- Boton subir -->
-            <div class="volver"><a href="#top">Subir</a></div>
+            <div class="volver"><button class="volver"><a href="#top">Subir</a></button></div>
           </article>
         </section>
       </div>
     </div>
+    <!-- <div id="carouselExample" class="carousel slide">
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/diseño_1.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/diseño_2.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/diseño_3.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div> -->
   </main>
 
 

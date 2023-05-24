@@ -77,17 +77,21 @@ main .lateral nav ul li a {
 }
 
 /* Boton Subir */
-.volver {
-    text-align: center;
+#principal_inicio .volver {
+    display: flex;
+    justify-content: center;
     margin: 20px;
 }
-.volver a {
+#principal_inicio .volver button {
     background-color: #FAC462;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 10px #000000;
+}
+
+#principal_inicio .volver a {
     color: black;
     text-decoration: none;
     padding: 4px;
-    border-radius: 20px;
-    box-shadow: inset 0px 0px 5px #996300;
 }
 
 /* Slider ofertas */
@@ -98,43 +102,47 @@ main .lateral nav ul li a {
 }
 
 /* Tarjeta */
-.carta {
+#slider .carta {
     background-color: white;
-    /* width: 210px; */
-    /* height: 400px; */
-    /* padding: 5px; */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: space-between; */
-    /* position: relative; */
+    width: 210px;
+    height: 400px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
 }
-.carta .contenido {
+#slider .carta .contenido {
     /* display: flex; */
     /* flex-direction: column; */
     /* align-items: center; */
 }
-.carta .carrito {
-    background-color: #C7DA64;
-    border-radius: 50px;
-    /* padding: 5px 15px; */
-    /* align-self: flex-end; */
+#slider .carta .contenido p {
+    margin: 0px;
 }
-.carta .promo {
+#slider .carta .contenido .promo {
     background-color: white;
     color: #ff0000;
-    /* position: absolute; */
-    /* top: 0px; */
+    position: absolute;
+    top: 0px;
 }
-.cent {
-    font-size: x-small;
-    position: relative;
-    top: -7px;
-}
-.tachado {
+#slider .carta .contenido .tachado {
     text-decoration:  line-through 1px #ff0000;
 }
-.actual {
+#slider .carta .contenido .actual {
     font-size: 25px;
+}
+#slider .carta .contenido .cent {
+    vertical-align: text-top;
+    font-size: 0.5em;
+    /* text-decoration: underline; */
+}
+#slider .carta .carrito {
+    background-color: #C7DA64;
+    border-radius: 50px;
+    padding: 5px 10px;
+    align-self: flex-end;
+    box-shadow: inset 0px 0px 10px #000000;
 }
 
 /* Mapa */
@@ -154,12 +162,13 @@ main .lateral nav ul li a {
     /* margin-top: 50px; */
 }
 #pago .tipo_pago {
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
 }
 #pago .tipo_pago p{
-    /* margin-bottom: 10px; */
+    margin-bottom: 10px;
 }
 
 /* Tienda */
@@ -370,7 +379,7 @@ main .lateral nav ul li a {
 }
 
 @media screen and (min-width: 768px) {
-    header .navbar div div {
+    header .navbar div .menu {
         justify-content: flex-end;
     }
     header .navbar .navbar-nav li {
@@ -388,5 +397,10 @@ main .lateral nav ul li a {
         text-align: left;
         margin: 5px 0px;
     }
+    #pago {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
     
 }
