@@ -60,89 +60,119 @@ main .lateral nav ul li a {
 }
 
 /* Articulo principal inicio */
-#principal_inicio {
+.principal_inicio {
     /* padding: 10px 20px; */
 }
-#principal_inicio h2 {
+.principal_inicio h2 {
     font-family: 'Hahmlet', serif;
     margin: 20px 0px;
 }
-#principal_inicio article {
+.principal_inicio article {
     /* margin-bottom: 30px; */
 }
-#principal_inicio p {
+.principal_inicio p {
     font-size: large;
     line-height: 1.5;
     text-align:justify;
 }
 
 /* Boton Subir */
-#principal_inicio .volver {
+.principal_inicio .volver {
     display: flex;
     justify-content: center;
     margin: 20px;
 }
-#principal_inicio .volver button {
+.principal_inicio .volver button {
     background-color: #FAC462;
     border-radius: 20px;
     box-shadow: inset 0px 0px 10px #000000;
 }
 
-#principal_inicio .volver a {
+.principal_inicio .volver a {
     color: black;
     text-decoration: none;
     padding: 4px;
 }
 
 /* Slider ofertas */
-#slider {
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* justify-content: space-around; */
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+    display: flex;
+    justify-content:center;
 }
 
 /* Tarjeta */
-#slider .carta {
+#ofertas_semanales>div .carta {
     background-color: white;
     width: 210px;
     height: 400px;
     padding: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     position: relative;
+    box-shadow: 0px 0px 10px #000000;
+    margin: 10px;
 }
-#slider .carta .contenido {
+#ofertas_semanales>div {
+    justify-content: space-around;
+}
+#ofertas_semanales .carousel button span {
+    background-color: #FAC462;
+    border-radius: 10px;
+}
+#ofertas_semanales>div .carta img {
+    width: 100%;
+}
+#ofertas_semanales>div .carta .contenido {
     /* display: flex; */
     /* flex-direction: column; */
     /* align-items: center; */
 }
-#slider .carta .contenido p {
+#ofertas_semanales>div .carta p {
     margin: 0px;
 }
-#slider .carta .contenido .promo {
+#ofertas_semanales>div .carta .promo {
     background-color: white;
     color: #ff0000;
+    text-align: center;
+    font-size: 10px;
     position: absolute;
-    top: 0px;
+    top: 25px;
+    left: 20px;
+    transform: translate(4px, 17px) rotate(-45deg);
+    animation: rotate 4s infinite;
 }
-#slider .carta .contenido .tachado {
+/* Animacion de rotacion promo */
+@keyframes rotate {
+    0% {
+        transform: rotate(-45deg);
+    }
+    50% {
+        transform: rotate(45deg) scale(150%);
+    }
+    100% {
+        transform: rotate(-45deg);
+    }
+
+}
+#ofertas_semanales>div .carta .tachado {
     text-decoration:  line-through 1px #ff0000;
 }
-#slider .carta .contenido .actual {
+#ofertas_semanales>div .carta .actual {
     font-size: 25px;
 }
-#slider .carta .contenido .cent {
+#ofertas_semanales>div .carta .cent {
     vertical-align: text-top;
     font-size: 0.5em;
     /* text-decoration: underline; */
 }
-#slider .carta .carrito {
+#ofertas_semanales>div .carta .carrito {
     background-color: #C7DA64;
     border-radius: 50px;
     padding: 5px 10px;
-    align-self: flex-end;
     box-shadow: inset 0px 0px 10px #000000;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
 }
 
 /* Mapa */
